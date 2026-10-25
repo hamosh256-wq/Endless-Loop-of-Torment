@@ -1,0 +1,483 @@
+[gd_scene format=3 uid="uid://duncmp2pw1vrw"]
+
+[ext_resource type="Texture2D" uid="uid://u7pk57l7h8wg" path="res://Assets/envo/Cold Corridors Files/Cold Corridors Files/Assets/preview.png" id="1_q4ogu"]
+[ext_resource type="PackedScene" uid="uid://c2ip0pilr1nxe" path="res://Assets/player/hero/hero.tscn" id="2_upt27"]
+[ext_resource type="PackedScene" uid="uid://blv3801guqg0a" path="res://Assets/enemise/boss/finalboss.tscn" id="3_8hjn4"]
+[ext_resource type="PackedScene" uid="uid://b4p67a1grbvqw" path="res://Assets/friends/1st nbc .tscn" id="4_x8m6m"]
+[ext_resource type="PackedScene" uid="uid://26rmvwjjjjg6" path="res://Assets/enemise/demons/normal_enime.tscn" id="5_l64vi"]
+[ext_resource type="PackedScene" uid="uid://bd6uenro21pgb" path="res://Assets/enemise/demons/flaying_demon.tscn" id="6_2qt2h"]
+
+[sub_resource type="Animation" id="Animation_q4ogu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("nbc:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(158, 77)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("nbc2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-608, 64)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("nbc3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, 59)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("nbc4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-376, 67)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("nbc5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-544, 73)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("nbc6:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(63, 58)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("nbc7:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-316, 65)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("nbc8:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-120, 68)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("hero:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19.000004, 202)]
+}
+
+[sub_resource type="Animation" id="Animation_bmr8k"]
+resource_name = "cutscene_main"
+length = 35.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("nbc:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(158, 77)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("nbc2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-608, 64)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("nbc3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, 59)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("nbc4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-376, 67)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("nbc5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-544, 73)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("nbc6:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(63, 58)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("nbc7:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-316, 65)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("nbc8:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-120, 68)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("hero:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0.025096506),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-19.000004, 202)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("nbc/AnimatedSprite2D:animation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xjvry"]
+_data = {
+&"RESET": SubResource("Animation_q4ogu"),
+&"cutscene_main": SubResource("Animation_bmr8k")
+}
+
+[node name="1st cutseen" type="Node2D" unique_id=800073811]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1955265292]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(312.00003, 160)
+scale = Vector2(1.1232142, 1.3437499)
+texture = ExtResource("1_q4ogu")
+
+[node name="background3" type="Sprite2D" parent="." unique_id=1326881608]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(1902.9999, 157)
+scale = Vector2(1.5428572, 1.3482143)
+texture = ExtResource("1_q4ogu")
+
+[node name="background6" type="Sprite2D" parent="." unique_id=1190145466]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(2764, 154.99994)
+scale = Vector2(1.5428572, 1.3482143)
+texture = ExtResource("1_q4ogu")
+
+[node name="background4" type="Sprite2D" parent="." unique_id=894010170]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(1046, 159)
+scale = Vector2(1.5428572, 1.3616073)
+texture = ExtResource("1_q4ogu")
+
+[node name="background5" type="Sprite2D" parent="." unique_id=1213295555]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(-427.99997, 159.49998)
+scale = Vector2(1.5428572, 1.3526784)
+texture = ExtResource("1_q4ogu")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=375701446]
+position = Vector2(306, 159)
+zoom = Vector2(1.1, 1.1)
+position_smoothing_enabled = true
+position_smoothing_speed = 3.1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=869211958]
+libraries/ = SubResource("AnimationLibrary_xjvry")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1465538032]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2096783823]
+modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -268.0
+offset_top = 9.0
+offset_right = -268.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=817526964]
+
+[node name="hero" parent="." unique_id=930577762 instance=ExtResource("2_upt27")]
+position = Vector2(-19.000004, 202)
+scale = Vector2(1.19, 1.4)
+metadata/_edit_group_ = true
+
+[node name="Camera2D" parent="hero" index="2" unique_id=1625256]
+visible = false
+offset = Vector2(2.635, -94.085)
+enabled = false
+
+[node name="aura" parent="hero" index="4" unique_id=775925513]
+visible = false
+
+[node name="sword3" parent="hero" index="7" unique_id=769156781]
+position = Vector2(10, 17)
+
+[node name="darklightring" parent="hero" index="8" unique_id=494933308]
+visible = false
+
+[node name="dark-kamihameha" parent="hero" index="9" unique_id=796364656]
+visible = false
+
+[node name="finalboss" parent="." unique_id=1746797484 instance=ExtResource("3_8hjn4")]
+position = Vector2(2476, 27)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="finalboss" index="0" unique_id=2035189726]
+position = Vector2(217, 103)
+
+[node name="CollisionShape2D" parent="finalboss" index="1" unique_id=1280013458]
+position = Vector2(197, 127)
+
+[node name="spell1" parent="finalboss" index="2" unique_id=922282247]
+visible = false
+
+[node name="spell2" parent="finalboss" index="3" unique_id=393639730]
+visible = false
+
+[node name="spell3" parent="finalboss" index="4" unique_id=1331732490]
+visible = false
+
+[node name="aoe1" parent="finalboss" index="5" unique_id=578021454]
+visible = false
+
+[node name="aoe2" parent="finalboss" index="6" unique_id=761641250]
+visible = false
+
+[node name="nbc" parent="." unique_id=893303021 instance=ExtResource("4_x8m6m")]
+position = Vector2(158, 77)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc2" parent="." unique_id=114179546 instance=ExtResource("4_x8m6m")]
+position = Vector2(-608, 64)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc2" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc2" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc3" parent="." unique_id=484462368 instance=ExtResource("4_x8m6m")]
+position = Vector2(-2, 59)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc3" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc3" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc4" parent="." unique_id=1875269331 instance=ExtResource("4_x8m6m")]
+position = Vector2(-376, 67)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc4" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc4" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc5" parent="." unique_id=1063901808 instance=ExtResource("4_x8m6m")]
+position = Vector2(-544, 73)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc5" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc5" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc6" parent="." unique_id=881557477 instance=ExtResource("4_x8m6m")]
+position = Vector2(63, 58)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc6" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc6" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc7" parent="." unique_id=1437838559 instance=ExtResource("4_x8m6m")]
+position = Vector2(-316, 65)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc7" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc7" index="2" unique_id=417225631]
+visible = false
+
+[node name="nbc8" parent="." unique_id=233262319 instance=ExtResource("4_x8m6m")]
+position = Vector2(-120, 68)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" parent="nbc8" index="1" unique_id=195821127]
+position = Vector2(189, 162)
+
+[node name="arrow" parent="nbc8" index="2" unique_id=417225631]
+visible = false
+
+[node name="normal enime" parent="." unique_id=403561048 instance=ExtResource("5_l64vi")]
+position = Vector2(1746, -19)
+
+[node name="normal enime2" parent="." unique_id=77857826 instance=ExtResource("5_l64vi")]
+position = Vector2(2103, -25)
+
+[node name="flaying demon" parent="." unique_id=452440105 instance=ExtResource("6_2qt2h")]
+position = Vector2(2205, -57)
+
+[editable path="hero"]
+[editable path="finalboss"]
+[editable path="nbc"]
+[editable path="nbc2"]
+[editable path="nbc3"]
+[editable path="nbc4"]
+[editable path="nbc5"]
+[editable path="nbc6"]
+[editable path="nbc7"]
+[editable path="nbc8"]

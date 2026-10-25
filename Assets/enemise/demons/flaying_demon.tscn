@@ -1,0 +1,163 @@
+[gd_scene format=3 uid="uid://bd6uenro21pgb"]
+
+[ext_resource type="Script" uid="uid://bejgmq5un8s7g" path="res://sicrept/flayingdemon.tscn.gd" id="1_3b28r"]
+[ext_resource type="Texture2D" uid="uid://bpwvkjtmr7blj" path="res://Assets/enemise/demons/Flying enemies/Flying enemies/Bat.png" id="1_5l1gi"]
+[ext_resource type="PackedScene" uid="uid://vg2bxl5r2hus" path="res://Assets/enemise/demons/volt.tscn" id="2_3b28r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q2pm"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnxyy"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(48, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m836x"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(96, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6ws4"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(0, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8bmi"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(48, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wsm84"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(96, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q10o5"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(144, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbjdo"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(192, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o57l2"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(0, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qlan"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(48, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1uus"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxmdp"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muhg7"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0gec"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wa05"]
+atlas = ExtResource("1_5l1gi")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lmjep"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7q2pm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnxyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m836x")
+}],
+"loop": 1,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6ws4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8bmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wsm84")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q10o5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbjdo")
+}],
+"loop": 1,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o57l2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qlan")
+}],
+"loop": 1,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1uus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxmdp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muhg7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0gec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wa05")
+}],
+"loop": 1,
+"name": &"idel",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l2rxx"]
+radius = 379.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3b28r"]
+radius = 628.66205
+
+[node name="flaying demon" type="CharacterBody2D" unique_id=452440105]
+script = ExtResource("1_3b28r")
+volt_scene = ExtResource("2_3b28r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1060206721]
+texture_filter = 1
+position = Vector2(147, 144)
+scale = Vector2(1.4375, 1.9375)
+sprite_frames = SubResource("SpriteFrames_lmjep")
+animation = &"idel"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=183835636]
+position = Vector2(142, 145)
+shape = SubResource("CircleShape2D_l2rxx")
+metadata/_edit_group_ = true
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=930188414]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=1977284644]
+position = Vector2(146, 149)
+shape = SubResource("CircleShape2D_3b28r")
+debug_color = Color(0.91304535, 0.258735, 0.36363718, 0.41960785)

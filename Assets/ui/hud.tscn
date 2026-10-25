@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dtrw2e20j0gjn"]
+
+[ext_resource type="Script" uid="uid://7g4l4h1hs1jf" path="res://Assets/ui/hud.gd" id="1_l8s4g"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lmjep"]
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_l2rxx"]
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_nccvh"]
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_ix443"]
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_4h23n"]
+font_size = 24
+
+[node name="HUD" type="Control" unique_id=991107160]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_l8s4g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=65300252]
+layout_mode = 1
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 106.0
+offset_bottom = 206.0
+
+[node name="HP" type="Label" parent="VBoxContainer" unique_id=1834303901]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_lmjep")
+
+[node name="Damage" type="Label" parent="VBoxContainer" unique_id=1964832369]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_l2rxx")
+
+[node name="Score" type="Label" parent="VBoxContainer" unique_id=514080639]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_nccvh")
+
+[node name="Lives" type="Label" parent="VBoxContainer" unique_id=1183958051]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_ix443")
+
+[node name="Bonus" type="Label" parent="VBoxContainer" unique_id=1492074291]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_4h23n")

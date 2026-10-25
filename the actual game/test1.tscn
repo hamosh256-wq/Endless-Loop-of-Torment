@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://crlfcbb8ctj4j"]
+
+[ext_resource type="Texture2D" uid="uid://vsxvc41vddoi" path="res://Assets/envo/Dark Forest Tileset/Tileset/Tileset.png" id="1_k1aq6"]
+[ext_resource type="PackedScene" uid="uid://c2ip0pilr1nxe" path="res://Assets/player/hero/hero.tscn" id="2_2rvgm"]
+[ext_resource type="PackedScene" uid="uid://b4p67a1grbvqw" path="res://Assets/friends/1st nbc .tscn" id="3_2rvgm"]
+[ext_resource type="PackedScene" uid="uid://bd6uenro21pgb" path="res://Assets/enemise/demons/flaying_demon.tscn" id="3_qhy6t"]
+[ext_resource type="PackedScene" uid="uid://26rmvwjjjjg6" path="res://Assets/enemise/demons/normal_enime.tscn" id="4_05d0c"]
+[ext_resource type="PackedScene" uid="uid://buqd588nl2bn5" path="res://Assets/enemise/boss/1_stboss.tscn" id="6_djtf0"]
+[ext_resource type="PackedScene" uid="uid://dlgjdmh6bjrc7" path="res://Assets/enemise/boss/2_ndboss.tscn" id="7_tv86p"]
+[ext_resource type="PackedScene" uid="uid://v7pabphwyure" path="res://sicrept/area_2d.tscn" id="8_mwfoc"]
+[ext_resource type="PackedScene" uid="uid://ciwikmid0b1d8" path="res://sicrept/1+up.tscn" id="9_ythwj"]
+[ext_resource type="PackedScene" uid="uid://dtrw2e20j0gjn" path="res://Assets/ui/hud.tscn" id="10_kibeh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_05d0c"]
+atlas = ExtResource("1_k1aq6")
+region = Rect2(132, 0, 44, 40)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lmjep"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_05d0c")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l2rxx"]
+size = Vector2(797, 45.5)
+
+[node name="Node2D" type="Node2D" unique_id=692234519]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2142340878]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D" unique_id=1855382938]
+position = Vector2(162, 144)
+scale = Vector2(2.0454545, 1.4)
+sprite_frames = SubResource("SpriteFrames_lmjep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=244697107]
+position = Vector2(257.5, 160.75)
+shape = SubResource("RectangleShape2D_l2rxx")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=920464132]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D2" unique_id=773123736]
+position = Vector2(162, 144)
+scale = Vector2(2.0454545, 1.4)
+sprite_frames = SubResource("SpriteFrames_lmjep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=325726823]
+position = Vector2(256, 162)
+shape = SubResource("RectangleShape2D_l2rxx")
+
+[node name="nbc" parent="." unique_id=893303021 instance=ExtResource("3_2rvgm")]
+position = Vector2(-202, 23)
+
+[node name="normal enime" parent="." unique_id=403561048 instance=ExtResource("4_05d0c")]
+position = Vector2(249, 30)
+scale = Vector2(0.3, 0.3)
+
+[node name="flaying demon" parent="." unique_id=452440105 instance=ExtResource("3_qhy6t")]
+position = Vector2(182, -16)
+scale = Vector2(0.3, 0.3)
+
+[node name="1stboss" parent="." unique_id=136490578 groups=["enemy"] instance=ExtResource("6_djtf0")]
+position = Vector2(50, 24)
+scale = Vector2(0.5, 0.5)
+
+[node name="2ndboss" parent="." unique_id=2071504635 instance=ExtResource("7_tv86p")]
+position = Vector2(392, 36)
+scale = Vector2(0.5, 0.5)
+
+[node name="coin" parent="." unique_id=1228360100 instance=ExtResource("8_mwfoc")]
+position = Vector2(-104, 58)
+
+[node name="1+up" parent="." unique_id=128656214 instance=ExtResource("9_ythwj")]
+position = Vector2(-81, 69)
+
+[node name="hero" parent="." unique_id=930577762 instance=ExtResource("2_2rvgm")]
+position = Vector2(-29, 66)
+scale = Vector2(0.6, 0.6)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="hero" unique_id=107840174]
+
+[node name="HUD" parent="hero/CanvasLayer" unique_id=991107160 instance=ExtResource("10_kibeh")]

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c8xqyu47rikvd"]
+
+[ext_resource type="Script" uid="uid://sijjlxad31te" path="res://Assets/friends/arrow.gd" id="1_7hcwm"]
+[ext_resource type="Texture2D" uid="uid://dbmh647ilm2ou" path="res://Assets/friends/GandalfHardcore Archer/arrow.png" id="1_64w4t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmjep"]
+size = Vector2(50, 20)
+
+[node name="arrow" type="Area2D" unique_id=601997878]
+position = Vector2(-202, 23)
+scale = Vector2(0.2, 0.2)
+script = ExtResource("1_7hcwm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1298203332]
+texture_filter = 1
+position = Vector2(259, 155.00002)
+scale = Vector2(1.433333, 4.8499985)
+texture = ExtResource("1_64w4t")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=548964913]
+position = Vector2(265, 160)
+shape = SubResource("RectangleShape2D_lmjep")
+metadata/_edit_group_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
